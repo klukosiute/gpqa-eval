@@ -235,7 +235,7 @@ def main():
             run_eval_claude(client, model, run_id, output_path)
 
     elif provider == "openai":
-        with open("/Users/kamile/code/oai/.openai.secret", "r") as f:
+        with open("/Users/kamile/code/oai/.openai.secret2", "r") as f:
             contents = f.read().strip()
         api_key = contents.split("\n")[0].split("=")[1].strip()
         client = OpenAI(api_key=api_key)
